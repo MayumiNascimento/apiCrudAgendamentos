@@ -21,7 +21,7 @@ class ControllerAgendamento extends Controller
 
     public function getDia($dias){
 
-        if($dias === ''){
+        if($dias === null){
             return Agendamento::all();
         }
         $arrayDias = explode(',',$dias);
